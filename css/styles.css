@@ -856,7 +856,7 @@ body {
 
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: #2196f3;
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   border-color: transparent;
 }
