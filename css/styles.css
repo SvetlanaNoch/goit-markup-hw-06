@@ -744,15 +744,13 @@ body {
   flex-direction: column;
 }
 
-.modal-form-field{
+.modal-form-field {
   margin-bottom: 10px;
 }
 
-
-.modal-form-field-comment{
+.modal-form-field-comment {
   margin-bottom: 20px;
 }
-
 
 .modal-form-text {
   font-family: "Roboto", sans-serif;
@@ -845,7 +843,6 @@ body {
   margin-bottom: 30px;
   color: #757575;
   padding-left: 9px;
-
 }
 
 .modal-form-link {
@@ -856,8 +853,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
-  }
-
+}
 
 .modal-form-check-desc::before {
   content: "";
@@ -868,6 +864,7 @@ body {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
+  color: #212121;
 }
 
 .modal-form-check:checked + .modal-form-check-desc::before {
