@@ -57,24 +57,6 @@ body {
   margin-left: auto;
 }
 
-.menu-link::after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -30px;
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  margin-bottom: -1px;
-  background-color: #2196f3;
-  opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-link:hover::after {
-  opacity: 1;
-}
-
 .menu-item {
   margin-right: 50px;
 }
@@ -93,26 +75,63 @@ body {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-link::after{
+  display: inline-block;
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -30px;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  margin-bottom: -1px;
+  background-color: #2196F3;
+  opacity: 0;
+}
+.menu-link:hover::after, .menu-link:focus::after{
+  opacity: 1;
+}
+.current{
+  color: #188ce8;
+}
+.current::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  margin-bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color:#2196F3;
+  opacity: 1;
+  bottom: -30px;
+}
+
+
+.contacts-phone-number::after{
+  display: inline-block;
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -31px;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  margin-bottom: -1px;
+  background-color: #2196F3;
+  opacity: 0;
+  visibility: hidden;
+}
+
 
 .menu-link:hover,
 .menu-link:focus {
   color: #2196f3;
+  
 }
-
-.menu-link-contacts {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link-contacts:hover,
-.menu-link-contacts:focus {
-  color: #2196f3;
+.menu-link1:hover, .menu-link1:focus{
+  color:#2196F3;
 }
 
 .menu-contact {
@@ -175,7 +194,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .section-photo {
   display: flex;
   padding-top: 94px;
